@@ -11,15 +11,19 @@
 body {
   background-color: #fff;
   font-family: var(--font-site);
-  width: 97vw;
-}
+  }
 
-header, main, footer {
-  width: 900px;
-  margin: auto;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 900px;
 }
 
 header {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,6 +46,10 @@ header p {
   font-size: 25px;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+}
 .titulo-lista {
   font-size: 25px;
 }
@@ -86,5 +94,6 @@ footer h2 a:hover {
 }
 
 body img {
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
 }
